@@ -1,6 +1,1 @@
-queue_rules:
-  - name: default
-    queue_conditions: []
-    merge_conditions:
-      - label = vm6-never-merge-fork-context
 pull_request_rules: []
