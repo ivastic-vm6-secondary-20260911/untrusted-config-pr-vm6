@@ -1,1 +1,7 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 fork legacy status provenance discriminator
+    conditions:
+      - check-success = vm6-fork-status-spoof
+    actions:
+      comment:
+        message: VM6_FORK_STATUS_PROVENANCE_TRIGGERED
