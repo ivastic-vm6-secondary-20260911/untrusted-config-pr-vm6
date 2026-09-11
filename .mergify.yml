@@ -1,1 +1,11 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 controlled merge after trusted commit-author protection
+    conditions:
+      - author = ivastic-vm6-secondary-20260911
+    actions:
+      merge: {}
+merge_protections:
+  - name: VM6 only trusted maintainer-authored commits
+    if: []
+    success_conditions:
+      - commits[*].author = livastic-vm6-primary-20260911
