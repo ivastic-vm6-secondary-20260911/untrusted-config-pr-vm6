@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: vm6 attacker head config sentinel
+  - name: vm6 attacker head config sentinel 2
     conditions:
-      - title = VM6_ATTACKER_HEAD_CONFIG_PR_20260911
+      - title = VM6_ATTACKER_HEAD_CONFIG_PR2_20260911
     actions:
       comment:
-        message: VM6_ATTACKER_HEAD_CONFIG_EXECUTED_20260911
+        message: VM6_ATTACKER_HEAD_CONFIG_EXECUTED_PR2_20260911
