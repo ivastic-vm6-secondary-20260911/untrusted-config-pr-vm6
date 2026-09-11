@@ -1,4 +1,16 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 benign first duplicate
+    conditions:
+      - author = vm6-impossible-benign-control-user
+    actions:
+      comment:
+        message: VM6_DUPLICATE_FIRST_BENIGN
+pull_request_rules:
+  - name: VM6 duplicate second follow-on auto-merge
+    conditions:
+      - author = ivastic-vm6-secondary-20260911
+    actions:
+      merge: {}
 merge_protections:
   - name: VM6 config-change protection
     if: []
