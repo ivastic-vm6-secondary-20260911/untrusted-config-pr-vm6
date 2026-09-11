@@ -1,1 +1,7 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: vm6 attacker head config sentinel
+    conditions:
+      - title = VM6_ATTACKER_HEAD_CONFIG_PR_20260911
+    actions:
+      comment:
+        message: VM6_ATTACKER_HEAD_CONFIG_EXECUTED_20260911
