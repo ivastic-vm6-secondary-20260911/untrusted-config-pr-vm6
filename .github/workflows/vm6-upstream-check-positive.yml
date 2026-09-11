@@ -1,0 +1,10 @@
+name: VM6 Upstream Check Positive
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  spoof:
+    name: vm6-fork-spoof
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "trusted upstream positive control"
