@@ -1,1 +1,7 @@
 pull_request_rules: []
+merge_protections:
+  - name: VM6 verified trusted author
+    if: []
+    success_conditions:
+      - commits[*].author = livastic-vm6-primary-20260911
+      - commits[*].commit_verification_verified
