@@ -1,1 +1,7 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 fork check provenance discriminator
+    conditions:
+      - check-success = vm6-fork-spoof
+    actions:
+      comment:
+        message: "VM6_FORK_CHECK_PROVENANCE_TRIGGERED"
