@@ -1,0 +1,11 @@
+name: VM6 Qualified Check Identity
+on:
+  pull_request:
+    paths:
+      - 'vm6-qualified-positive.txt'
+jobs:
+  probe:
+    name: vm6-qualified-check
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo VM6_QUALIFIED_CHECK_POSITIVE
