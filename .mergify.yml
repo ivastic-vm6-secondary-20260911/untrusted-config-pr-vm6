@@ -1,7 +1,1 @@
-pull_request_rules:
-  - name: VM6 fork deployment provenance discriminator
-    conditions:
-      - deployment-success = vm6-fork-deployment-provenance
-    actions:
-      comment:
-        message: VM6_FORK_DEPLOYMENT_PROVENANCE_TRIGGERED
+pull_request_rules: []
