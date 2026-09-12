@@ -1,1 +1,7 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 qualified GitHub Actions deployment identity discriminator
+    conditions:
+      - deployment-success = @github-actions/vm6-qualified-deployment
+    actions:
+      comment:
+        message: VM6_QUALIFIED_DEPLOYMENT_IDENTITY_TRIGGERED
