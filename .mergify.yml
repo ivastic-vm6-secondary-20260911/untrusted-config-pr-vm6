@@ -1,6 +1,7 @@
 pull_request_rules:
   - name: VM6 reverse-fork delete-head canary
     conditions:
-      - label = vm6-reverse-delete-trigger
+      - head-repo-full-name = livastic-vm6-primary-20260911/untrusted-config-pr-vm6
+      - head = vm6-reverse-delete-head-canary-20260912
     actions:
       delete_head_branch: {}
