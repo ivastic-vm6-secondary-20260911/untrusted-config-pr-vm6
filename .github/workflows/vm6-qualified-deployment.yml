@@ -1,0 +1,13 @@
+name: VM6 Qualified Deployment Identity
+on:
+  pull_request:
+    paths:
+      - 'vm6-qualified-deployment-positive.txt'
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: vm6-qualified-deployment
+    steps:
+      - run: echo VM6_QUALIFIED_DEPLOYMENT_POSITIVE
